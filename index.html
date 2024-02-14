@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLACK DAY</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body style="background-color: black;">
+    <h1 style="color: aliceblue;">I CODE EVERY PROJECT WITH  LOVE AND JOY </h1>
+    <h1 style="color: aliceblue;">BUT THIS WITH GRIEF AND SORROW</h1><br>
+    <H1 style="color: aliceblue;" id = "check">TYPE jai hind  AND CLICK ON PLAY VIDEO! TO PLAY A VIDEO </H1>
+    <input type="text"  id="play" placeholder="TYPE HERE" style="color: black;"><br/>
+    <br>
+    <br>
+    <br>
+    <button id = "b1" onclick=getr()>PLAY VIDEO!</button><br>
+    <div id = "video" style="display: none;">
+    <video width="1000PX" height="1000PX" controls autoplay loop id="myVideo">
+        <source src="india.mp4" type="video/mp4">Your browser does not support HTML5 video.
+    </video>
+    </div>
+    <h1 id = "finish" style="color:white;"></h1>
+
+    <script>
+        function getr(){
+            var l = document.getElementById("play").value;
+            if(l == "jai hind"){
+                document.getElementById('video').style.display='block';
+                document.getElementById('check').style.display='none';
+                document.getElementById("b1").style.display = 'none';
+                document.getElementById("play").style.display = 'none';
+                document.getElementById("finish").innerHTML = "<h1>EVEN DEATH SHALL RESPECT THOSE WHO SACRIFICE THIER LIFE FOR THE COUNTRY</h1>"
+            }else{
+                alert("please type jai hind to play the video");
+            }
+            
+        }
+    </script>
+</body>
+</html>
